@@ -44,7 +44,15 @@ class Dispatch extends ClassRoutes
 	#Método de adição de parâmetros do controller
 	private function addParam()
 	{
+        $ContArray = count($this->parseUrl());
 
+        if ($ContArray > 2) {
+            foreach ($this->parseUrl() as $Key => $Value) {
+                if ($Key > 1) {
+                    $this->setParam($this->Param += [$Key => $Value]);
+                }
+            }
+        }
 	}
 
 #GETTERS AND SETTERS

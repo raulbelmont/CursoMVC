@@ -19,7 +19,8 @@ class ClassRoutes
 		$this -> Rota=array(
 			""=>"ControllerHome",
 			"home"=>"ControllerHome",
-			"sitemap"=>"ControllerSitemap"
+			"sitemap"=>"ControllerSitemap",
+			"carros"=>"ControllerCarros"
 		);
 
 		if (array_key_exists($I,$this->Rota)) {

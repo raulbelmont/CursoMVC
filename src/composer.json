@@ -1,0 +1,11 @@
+{
+    "name": "curso/mvc",
+    "description": "Curso de MVC da Webdesign em foco",
+    "authors": [
+        {
+            "name": "Raul Belmonte",
+            "email": "raulbelomont@gmail.com"
+        }
+    ],
+    "require": {}
+}

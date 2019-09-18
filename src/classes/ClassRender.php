@@ -28,20 +28,32 @@ class ClassRender
 	#Adiiona características específicas no head
 	public function addHead()
 	{
-		if (file_exists(DIRREQ."app/view/{$this->getDir()}/Main.php")) {
-			include(DIRREQ."app/view/{$this->getDir()}/Main.php");
+		if (file_exists(DIRREQ."app/view/{$this->getDir()}/Head.php")) {
+			include(DIRREQ."app/view/{$this->getDir()}/Head.php");
+		}
+	}
+
+	#Adiiona características específicas no header
+	public function addHeader()
+	{
+		if (file_exists(DIRREQ."app/view/{$this->getDir()}/Header.php")) {
+			include(DIRREQ."app/view/{$this->getDir()}/Header.php");
 		}
 	}
 
 	#Adiciona características específicas no main
 	public function addMain()
 	{
-
+		if (file_exists(DIRREQ."app/view/{$this->getDir()}/Main.php")) {
+			include(DIRREQ."app/view/{$this->getDir()}/Main.php");
+		}
 	}
 
 	#Adiciona características específicas no footer
 	public function addFooter()
 	{
-
+		if (file_exists(DIRREQ."app/view/{$this->getDir()}/Footer.php")) {
+			include(DIRREQ."app/view/{$this->getDir()}/Footer.php");
+		}
 	}
 }

@@ -21,6 +21,6 @@ define("DIRVIDEO", DIRPAGE."public/video/");
 
 #Acesso ao bando de dados
 define("DBHOST","localhost");
-define("DBNAME","MVC_CURSO");
+define("DBNAME","sistema");
 define("DBUSER","root");
 define("DBPASS","");

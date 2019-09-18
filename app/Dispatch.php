@@ -5,13 +5,10 @@ use Src\classes\ClassRoutes;
 
 class Dispatch extends ClassRoutes
 {
-
 	#Atributos
 	private $Method;
 	private $Param=[];
 	private $Obj;
-
-
 
 	#Método COonstrutor
 	public function __construct()
